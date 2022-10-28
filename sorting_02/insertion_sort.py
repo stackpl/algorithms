@@ -1,7 +1,7 @@
 def insertion_sort(a: list):
-    for j in range(2, len(a)):
+    for j in range(1, len(a)):
         key = a[j]
-        # insert a[j] into sorted sequence A[1..j-1]
+        # insert a[j] into sorted sequence A[0..j-1]
         i = j - 1
         while i >= 0 and a[i] > key:
             a[i + 1] = a[i]
